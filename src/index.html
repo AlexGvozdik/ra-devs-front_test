@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -12,8 +15,159 @@
     />
     <title>Document</title>
 </head>
-<body>
-        <!-- <include src="./partials/example.html"></include> -->
-
+<body class="page">
+<section class="notification">
+  <div class="notification__container">
+    <div class="notification__wrapper">
+      <p class="notification__message">
+        Announcement Announcement Announcement Announcement Announcement
+    </p>
+    </div>
+    <div class="notification__box">
+        <span class="notification__offer">
+            Special Offers
+        </span>
+        <button type="button" class="notification__button-close">
+            <svg class="icon-cross">
+                    <use href="./images/sprite.svg#icon-cross"></use>
+                </svg>
+        </button>
+    </div>
+  </div>
+    
+</section>
+<header class="header">
+  <div class="header__container container">
+    <div class="header__top-wrapper">
+      <div class="header__top-wrapper__left">
+        <ul class="header__contacts list">
+          <li class="header__contacts__item"><a href="mailto:bannerprintsandiego@gmail.com"
+                                class="header__email link info">bannerprintsandiego@gmail.com</a></li>
+          <li class="header__contacts__item"><a href="tel:+123 456 78 90" class="header__tel link info">+123 456 78 90</a></li>
+        </ul>
+        <form class="header__form">
+          <input class="header__search"
+          type="text" placeholder="Search">
+        </form>
+      </div>
+      <div class="header__top-wrapper__right">
+        <ul class="header__list-btn list">
+          <li class="header__list-btn__item"><button type="button" class="header__btn btn">
+              <span class="header__btn__span dot span-btn">3 items</span>
+              <svg class="icon-cart">
+                    <use href="./images/sprite.svg#icon-cart"></use>
+              </svg>
+            </button></li>
+            <li class="header__list-btn__item"><button type="button" class="header__btn btn">
+              <span class="header__btn__span span-btn">log IN</span>
+            <svg class="icon-person">
+                    <use href="./images/sprite.svg#icon-person"></use>
+            </svg>
+            </button></li>
+            
+        </ul>
+      </div>
+    </div>
+    <div class="header__bottom-wrapper">
+      <nav class="header__nav">
+        <ul class="header__nav-list list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link link">BANNER PRINTING</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link link">SIGN PRINTING</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link link">STANDS AND DISPLAYS</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link link">STICKERS</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link link">WINDOW GRAPHICS</a>
+          </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="account">
+    <div class="account__container container">
+      <div class="account__sidebar">
+        <span class="account__back">Back</span>
+        <ul class="account__list list">
+          <li class="account__item">
+            <button type="button" class="account__btn side-btn active">
+              <svg class="icon-user icon">
+                      <use href="./images/sprite.svg#icon-person"></use>
+              </svg>
+              <span class="account__btn__span span-btn">PROFILE</span>
+            </button>
+          </li>
+          <li class="account__item">
+            <button type="button" class="account__btn side-btn">
+              <svg class="icon-credit icon">
+                      <use href="./images/sprite.svg#icon-credit"></use>
+              </svg>
+              <span class="account__btn__span span-btn">PAYMENT</span>
+            </button>
+          </li>
+          <li class="account__item">
+            <button type="button" class="account__btn side-btn">
+              <svg class="icon-truck icon">
+                      <use href="./images/sprite.svg#icon-truck"></use>
+              </svg>
+              <span class="account__btn__span span-btn">ORDERS</span>
+            </button>
+          </li>
+          <li class="account__item">
+            <button type="button" class="account__btn side-btn">
+              <svg class="icon-file icon">
+                      <use href="./images/sprite.svg#icon-file"></use>
+              </svg>
+              <span class="account__btn__span span-btn">INVOICES</span>
+            </button>
+          </li>
+          <li class="account__item">
+            <button type="button" class="account__btn side-btn">
+              <svg class="icon-upload icon">
+                      <use href="./images/sprite.svg#icon-upload"></use>
+              </svg>
+              <span class="account__btn__span span-btn">UPLOADS</span>
+            </button>
+          </li>
+          <li class="account__item">
+            <button  type="button" class="account__btn side-btn">
+              <svg class="icon-heart icon">
+                      <use href="./images/sprite.svg#icon-heart"></use>
+              </svg>
+              <span class="account__btn__span span-btn">WISHLIST</span>
+            </button>
+          </li>
+        </ul>
+        <span class="account__logout span-btn">Log out</span>
+      
+      
+      
+      
+      
+      </div>
+      <div class="account__profile">
+        <p class="account__user-info">Anna K</p>
+        <a href="mailto:anna.k.workmail@gmail.com" class="account__user-email link">anna.k.workmail@gmail.com</a>
+        <span class="account__span-address span-btn line-hr">Shipping aDDRESS</span>
+        <a href="https://goo.gl/maps/Ft1pg9otkPayeuEa9" target="_blank" rel="noopener noreferrer" class="account__user-city link">1201 Airport Fwy, Irving, TX 75062, США</a>
+        <svg class="icon-edit">
+          <use href="./images/sprite.svg#icon-edit"></use>
+        </svg>
+        <span class="account__span-add-address span-btn">ADD ADDRESS</span>
+        <span class="account__span-edit span-btn line-hr">Edit profile</span>
+        <span class="account__span-change-password span-btn line-hr">change Password</span>
+      </div>
+    </div>
+  </section>
+</main>
 </body>
 </html>

@@ -1,0 +1,216 @@
+.account{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.account__ {
+    &container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &sidebar{
+        margin-left: 19px;
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          top: -75px;
+          left: 3px;
+          background-image: url(../images/back.svg);
+          width:8px;
+          height: 14px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-origin: border-box;
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -35px;
+          left: 143px;
+          background-image: url(../images/log-out.svg);
+          width:20px;
+          height: 20px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-origin: border-box;
+        }
+    }
+}
+
+.account__{
+    &back{
+        position: absolute;
+        top:-77px;
+        left: 15px;
+        color:var(--universal-color)
+    }
+
+    &logout{
+        position: absolute;
+        bottom: -37px;
+        left: 63px;
+        color:var(--universal-color)
+    }
+}
+
+.account__ {
+    &list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &item:not(:last-child){
+        margin-bottom: 2px;
+    }
+
+}
+
+.account__{
+    &btn{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+.icon{
+    width: 24px;
+    height: 24px;
+    margin-left: 18px;
+    margin-right: 40px;
+    stroke:red;
+}
+
+.account__{
+    &profile{
+        margin-left: 66px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    &user-info{
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 2px;
+    }
+}
+
+.account__{
+    &user-email{
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: var(--letter-spacing-first);
+        margin-bottom: 13px;
+    }
+    
+    &span-address{
+        margin-bottom: 30px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: 4px;
+            right: -424px;
+            background-image: url(../images/arrow-up.svg);
+            width:6px;
+            height: 12px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-origin: border-box;
+        }
+    }
+}
+
+.account__{
+    &user-city{
+        margin-bottom: 34px;
+        margin-left: 21px;
+        position: relative;
+            &::before {
+              content: '';
+              position: absolute;
+              top: 2px;
+              left: -21px;
+              background-image: url(../images/checked.svg);
+              width: 14px;
+              height: 114px;
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-origin: border-box;
+            }
+
+            &::after {
+              content: '';
+              position: absolute;
+              top: -4px;
+              right: -430px;
+              background-image: url(../images/trash.svg);
+              width: 18px;
+              height: 18px;
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-origin: border-box;
+            }
+    }
+
+    &span-add-address{
+        margin-bottom: 43px;
+        margin-left: 21px;
+        position: relative;
+        color:#FF725F;
+        
+    }
+}
+.account__{
+    &span-edit{
+        margin-bottom: 23px;
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: 4px;
+          right: -424px;
+          background-image: url(../images/arrow-up.svg);
+          width: 6px;
+          height: 12px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-origin: border-box;
+          transform: rotate(-180deg);
+        }
+    }
+
+    &span-change-password{
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: 4px;
+          right: -424px;
+          background-image: url(../images/arrow-up.svg);
+          width: 6px;
+          height: 12px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-origin: border-box;
+          transform: rotate(-180deg);
+        }
+    }
+}
+
+.icon-edit{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 114px;
+    right: -383px;
+}
+.account__{
+
+}

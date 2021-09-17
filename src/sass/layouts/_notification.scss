@@ -1,0 +1,56 @@
+.notification{
+    padding-top: 9px;
+    padding-bottom: 9px;
+    background-color: var(--main-text-color);
+
+    &__container {
+      padding: 0 12px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    &__wrapper {
+      text-align: center;
+      width: 447px;
+    }
+}
+
+.notification__{
+    &message {
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 13px;
+      color: var(--secondary-text-color);
+    }
+
+    &box {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin-left: 388px;
+    }
+}
+.notification__{
+    &offer {
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 22px;
+      color: var(--secondary-text-color);
+    }
+
+    &button-close {
+      margin-left: 18px;
+      width: 30px;
+      height: 30px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+    }
+}
+
+.icon-cross{
+    width: 15px;
+    height: 15px;
+    fill:var(--secondary-text-color);
+}

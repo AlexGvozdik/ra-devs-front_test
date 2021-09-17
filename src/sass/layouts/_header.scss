@@ -1,0 +1,130 @@
+.header{
+    padding-top: 14px;
+    padding-bottom: 21px;
+    background: linear-gradient(180deg, var(--secondary-background-color) 0%, var(--secondary-background-color) 62%, var(--primary-background-color) 62%);
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.header__{
+    &top-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 34px;
+    }
+    
+    &top-wrapper__left {
+      margin-left: 10px;
+    }
+}
+
+.header__ {
+    &contacts {
+      margin-left: 3px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &contacts__item {
+
+      &:not(:first-child) {
+        margin-left: 9px;
+      }
+    }
+}
+
+
+.info{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.header__{
+    &search{
+        width: 311px;
+        height: 36px;
+        border: 1.2px solid var(--universal-color);
+        border-radius: 6px;
+        padding: 9px 10px;
+    }
+
+    &search::placeholder{
+        font-size: 16px;
+        line-height: 18px;
+        color: var(--universal-color);
+    }
+}
+
+.header__{
+    &list-btn{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &list-btn__item{
+        &:not(:first-child){
+            margin-left: 15px;
+        }
+    }
+}
+
+
+.header__ {
+  &btn{
+      width: 127px;
+      height: 44px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &btn__span{
+    margin-right: 20px;
+  }
+}
+.dot{
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: -3px;
+      right: -44px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--ellipse-color);
+    }
+}
+.icon-cart{
+    width: 22px;
+    height: 22px;
+}
+
+.icon-person{
+    width: 44px;
+    height: 44px;
+}
+
+.header__ {
+    &bottom-wrapper{
+        padding-left: 44px;
+        padding-right: 50px;
+    }
+
+  &nav-list{
+    max-width: 990px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+}
+.header__ {
+    &nav-link{
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 20px;
+    }   
+}

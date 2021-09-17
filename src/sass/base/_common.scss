@@ -1,0 +1,32 @@
+.page {
+  background-color: var(--primary-background-color);
+  font-family: var(--primary-fonts);
+  color: var(--paragraph-color);
+  letter-spacing: var(--letter-spacing-quater);
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: var(--paragraph-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+// *, ::before,::after {
+//     outline:1px solid black
+// }

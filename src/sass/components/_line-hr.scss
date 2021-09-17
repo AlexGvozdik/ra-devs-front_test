@@ -1,0 +1,11 @@
+.line-hr{
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0px;
+      width: 747px;
+      height: 2px;
+      background-image: url(../images/hr.svg);
+    }
+}
