@@ -9,8 +9,13 @@
 @import './components/_btn-sidebar';
 @import './components/span-btn';
 @import './components/line-hr';
+@import './components/modal';
+@import './components/modal-btn';
+@import './components/modal-span';
 
 /* ===========LAYOUTS============================ */
 @import './layouts/notification';
 @import './layouts/_header';
 @import './layouts/_account';
+@import './layouts/modal-login';
+@import './layouts/modal-form';

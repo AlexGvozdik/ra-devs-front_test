@@ -1,0 +1,49 @@
+.form__{
+    &wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 21px;
+      max-width: 570px;
+    }
+    &label{
+        width: 275px;
+    }
+    
+    &label-span{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 18px;
+        width: 275px;
+    }
+}
+.form__icon{
+    width: 8px;
+    height: 20px;
+}
+.form__{
+    &input{
+        width: 275px;
+        height: 40px;
+        border: 1px solid #9BAAAE;
+        border-radius: 6px;
+    }
+    
+    &btn {
+      width: 275px;
+      background-color: var(--ellipse-color);
+      display: block;
+      margin: 0 auto;
+    }
+}
+.address-input,
+.phone-input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+
+.form__{
+    
+}
