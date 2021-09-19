@@ -7,5 +7,8 @@ export default {
     edit: document.querySelector('.icon-edit'),
     address: document.querySelector('.account__span-add-address'),
     cross: document.querySelector('.icon-cross'),
-    notification:document.querySelector('.notification')
+    notification: document.querySelector('.notification'),
+    arrowUp: document.querySelector('.account__span-address-arrow'),
+    accountContainer: document.querySelector('.account__container'),
+    sideBar:document.querySelector('.account__sidebar')
 }

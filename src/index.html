@@ -47,7 +47,7 @@
         </ul>
         <form class="header__form">
           <input class="header__search"
-          type="text" placeholder="Search">
+          type="text" placeholder="Search" minlength="1" maxlength="10">
         </form>
       </div>
       <div class="header__top-wrapper__right">
@@ -152,14 +152,16 @@
       <div class="account__profile">
         <p class="account__user-info">Anna K</p>
         <a href="mailto:anna.k.workmail@gmail.com" class="account__user-email link">anna.k.workmail@gmail.com</a>
-        <span class="account__span-address span-btn line-hr">Shipping aDDRESS</span>
+        <span class="account__span-address hidden span-btn line-hr">1 New Yourk</span>
+        <span class="account__span-address hidden span-btn line-hr">2 Kiev</span>
+        <span class="account__span-address account__span-address-arrow span-btn line-hr">Shipping aDDRESS</span>
         <a href="https://goo.gl/maps/Ft1pg9otkPayeuEa9" target="_blank" rel="noopener noreferrer" class="account__user-city link">1201 Airport Fwy, Irving, TX 75062, США</a>
-        <svg class="icon-edit">
+        <svg class="icon-edit move">
           <use href="./images/sprite.svg#icon-edit"></use>
         </svg>
         <span class="account__span-add-address span-btn">ADD ADDRESS</span>
-        <span class="account__span-edit span-btn line-hr">Edit profile</span>
-        <span class="account__span-change-password span-btn line-hr">change Password</span>
+        <span class="account__span-edit account__span-edit-arrow span-btn line-hr">Edit profile</span>
+        <span class="account__span-password account__span-password-arrow span-btn line-hr">change Password</span>
       </div>
     </div>
   </section>
@@ -190,7 +192,7 @@
 </div>
 <div class="backdrop is-hidden" data-modal-form>
   <div class="modal modal__form">
-    <form class="form" id="form-user">
+    <form class="form" id="form-user" autocomplete="off">
       <div class="form__wrapper">
         <label class="form__label">
           <span class="form__span">
@@ -202,7 +204,7 @@
         
         <input type="text" name="name" 
                 minlength="3"
-                required
+                
                 autocomplete="off"
                 class="form__input name-input">
       </label>
@@ -213,7 +215,7 @@
           <use href="./images/sprite.svg#icon-flake"></use>
         </svg>
           </span>
-        <input type="text" name="sirname" required class="form__input surname-input">
+        <input type="text" name="sirname"  class="form__input surname-input">
       </label>
       </div>
       <label class="form__label">
@@ -223,7 +225,7 @@
           <use href="./images/sprite.svg#icon-flake"></use>
         </svg>
           </span>
-        <input type="text" name="address" required class="form__input address-input">
+        <input type="text" name="address"  class="form__input address-input">
       </label>
         <label class="form__label">
           <span class="form__span">
@@ -232,7 +234,7 @@
           <use href="./images/sprite.svg#icon-flake"></use>
         </svg>
           </span>
-        <input type="tel" name="phone" placeholder="+380XXXXXXXXX" required minlength="13" maxlength="13" title="Используйте указанный формат +380XXXXXXXXX" autocomplete="off" class="form__input phone-input">
+        <input type="tel" name="phone" placeholder="+380XXXXXXXXX"  minlength="13" maxlength="13" title="Используйте указанный формат +380XXXXXXXXX" pattern="^\+380\d{9}$" class="form__input phone-input">
       </label>
       <div class="form__wrapper">
         <label class="form__label">
@@ -242,7 +244,7 @@
           <use href="./images/sprite.svg#icon-flake"></use>
         </svg>
           </span>
-        <input type="text" name="city" required class="form__input city-input">
+        <input type="text" name="city"  class="form__input city-input">
       </label>
         <label class="form__label">
           <span class="form__span">
@@ -251,7 +253,7 @@
           <use href="./images/sprite.svg#icon-flake"></use>
         </svg>
           </span>
-        <input type="text" name="country" required class="form__input country-input">
+        <input type="text" name="country"  class="form__input country-input">
       </label>
       </div>
       <div class="form__wrapper">
@@ -262,7 +264,7 @@
           <use href="./images/sprite.svg#icon-flake"></use>
         </svg>
           </span>
-        <input type="text" name="state" required class="form__input state-input">
+        <input type="text" name="state"  class="form__input state-input">
       </label>
         <label class="form__label">
           <span class="form__span">
@@ -271,7 +273,7 @@
           <use href="./images/sprite.svg#icon-flake"></use>
         </svg>
           </span>
-        <input type="text" name="zip" required class="form__input zip-input">
+        <input type="text" name="zip"  class="form__input zip-input">
       </label>
       </div>
       <button class="form__btn modal__btn">

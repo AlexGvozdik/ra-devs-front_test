@@ -39,7 +39,9 @@
         }
     }
 }
-
+.high{
+    height: 429px;
+}
 .account__{
     &back{
         position: absolute;
@@ -110,9 +112,10 @@
     }
     
     &span-address{
+        cursor: pointer;
         margin-bottom: 30px;
         position: relative;
-        &::before{
+        &-arrow::before{
             content: '';
             position: absolute;
             bottom: 4px;
@@ -125,6 +128,10 @@
             background-origin: border-box;
         }
     }
+}
+
+.hidden{
+        display: none;
 }
 
 .account__{
@@ -171,7 +178,7 @@
     &span-edit{
         margin-bottom: 23px;
         position: relative;
-        &::before {
+        &-arrow::before {
           content: '';
           position: absolute;
           bottom: 4px;
@@ -186,9 +193,9 @@
         }
     }
 
-    &span-change-password{
+    &span-password{
         position: relative;
-        &::before {
+        &-arrow::before {
           content: '';
           position: absolute;
           bottom: 4px;
@@ -205,12 +212,16 @@
 }
 
 .icon-edit{
+    cursor: pointer;
     width: 18px;
     height: 18px;
     position: absolute;
-    top: 114px;
+    top: 228px;
     right: -383px;
 }
-.account__{
-
+.move{
+    top: 114px;
 }
+// .account__{
+
+// }

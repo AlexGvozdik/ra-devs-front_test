@@ -1,6 +1,8 @@
 import refs from './refs';
 
 refs.openModalBtn.addEventListener('click', onOpenModalLog)
+// refs.openModalBtn.addEventListener('mouseover', onOpenModalLog)
+
 refs.backdrop.addEventListener('click', onBackdropLogClose)
 
 function onOpenModalLog(e) {
