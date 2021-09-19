@@ -11,9 +11,7 @@
     }
     
     &label-span{
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
+        @include font(16px, 400, 18px);
         width: 275px;
     }
 }

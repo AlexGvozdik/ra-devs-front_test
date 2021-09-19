@@ -1,6 +1,4 @@
 .modal__span {
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 20px;
+    @include font(15px, 700, 20px);
     text-transform: uppercase;
 }

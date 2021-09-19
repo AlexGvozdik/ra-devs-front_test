@@ -4,7 +4,9 @@
   color: var(--paragraph-color);
   letter-spacing: var(--letter-spacing-quater);
 }
-
+.preload{
+  transition: none !important;
+}
 .list {
   margin: 0;
   padding: 0;

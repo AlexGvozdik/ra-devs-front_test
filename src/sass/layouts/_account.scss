@@ -95,18 +95,14 @@
     }
 
     &user-info{
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 24px;
+        @include font(20px, 700, 24px);
         margin-bottom: 2px;
     }
 }
 
 .account__{
     &user-email{
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 22px;
+        @include font(15px, 500, 22px);
         letter-spacing: var(--letter-spacing-first);
         margin-bottom: 13px;
     }

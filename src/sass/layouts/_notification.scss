@@ -18,9 +18,7 @@
 
 .notification__{
     &message {
-      font-weight: 500;
-      font-size: 10px;
-      line-height: 13px;
+      @include font(10px, 500, 13px);
       color: var(--secondary-text-color);
     }
 
@@ -33,9 +31,7 @@
 }
 .notification__{
     &offer {
-      font-weight: bold;
-      font-size: 15px;
-      line-height: 22px;
+      @include font(15px, 700, 22px);
       color: var(--secondary-text-color);
     }
 

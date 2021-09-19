@@ -1,7 +1,5 @@
 .span-btn{
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 27px;
+    @include font(15px, 600, 27px);
     text-transform: uppercase;
     letter-spacing: var(--letter-spacing-quater);
 }
